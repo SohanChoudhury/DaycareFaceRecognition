@@ -3,35 +3,38 @@
 # association of clip index to individual recognized:
     # 0 = eddie
     # 1 = sohan
-# this program will be called with argument for processing being the string name
+# this program will be called with argument for selection being the string name
 # representation of the recognized individual
 
 
 import os
 import pygame
-import time
 
 
 
 files = []
 
 
-def myMain():
+def myMain(person):
 
     loadClips()
 
-    processing("eddie")
-    # processing("sohan")
+    selection(person)
 
 
-def processing(person):
+
+def selection(person):
 
     if person == "eddie":
+        print("Eddie text selected")
         playClip(0)
+        print("Eddie text spoken")
     elif person == "sohan":
+        print("Sohan text selected")
         playClip(1)
+        print("Sohan text spoken")
     else:
-        print("No go")
+        print("No text selecred")
 
 
 def loadClips():
@@ -58,7 +61,6 @@ def playClip(clip_index):
     while pygame.mixer.music.get_busy():
       pygame.time.Clock().tick(1)
 
-    print("hi")
 
-
-myMain()
+myMain("eddie")
+# myMain("sohan")
