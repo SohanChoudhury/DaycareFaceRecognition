@@ -10,4 +10,5 @@ Utilized the following:
 
 We were able to design, implement, and iterate on a system that can accurately identify 1 of 6 individuals. These include ourselves, the daycare owner and one employee, as well as parents who volunteered to be a part of this project.
 
-Stay tuned for our video demo of the working system!
+Check out our video demo of the working system!
+https://www.youtube.com/watch?v=Bc9rpUNUum4
